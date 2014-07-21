@@ -1,0 +1,247 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\LWS.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\LWS.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 126, 130
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 LWS"
+FONT 16, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "作者好伟大啊！",IDOK,7,98,55,25,WS_GROUP
+    LTEXT           "为了自己那刚治好的眼睛\n专门写了这个程序\n以免以后再把眼睛给完坏了\n大家可以加我QQ：179656046\n当然了\n也可以来我的小站看看:\nhttp://hi.baidu.com/笑叹红尘破名字够超然吧？",
+                    IDC_STATIC,7,7,112,86
+    PUSHBUTTON      "访问博客",IDC_BUTTON1,64,98,55,25
+END
+
+IDD_LWS_DIALOG DIALOGEX 0, 0, 213, 315
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "LWS"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    CONTROL         "密码模式",LWS_MIMA,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,7,7,43,19
+    GROUPBOX        "输入密码参数",IDC_STATIC,7,35,199,79
+    CTEXT           "输入密码",IDC_STATIC,12,57,38,15,SS_CENTERIMAGE | NOT 
+                    WS_GROUP
+    CTEXT           "密码确认",IDC_STATIC,12,84,38,15,SS_CENTERIMAGE | NOT 
+                    WS_GROUP
+    EDITTEXT        IDC_EDIT1,50,57,149,15,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,50,84,149,15,ES_PASSWORD | ES_AUTOHSCROLL
+    CONTROL         "时间模式",LWS_Time,"Button",BS_AUTORADIOBUTTON,7,125,43,
+                    19
+    GROUPBOX        "输入时间参数",IDC_STATIC,7,146,199,119,WS_GROUP
+    EDITTEXT        IDC_EDIT3,13,181,21,15,ES_AUTOHSCROLL
+    CTEXT           "分后进行锁屏，持续",IDC_STATIC,36,181,73,15,
+                    SS_CENTERIMAGE | NOT WS_GROUP
+    EDITTEXT        IDC_EDIT4,114,182,20,14,ES_AUTOHSCROLL
+    LTEXT           "分钟",IDC_STATIC,136,181,23,13,SS_CENTERIMAGE | NOT 
+                    WS_GROUP
+    CTEXT           "",LWS_nowtime,4,265,205,21,SS_CENTERIMAGE
+    PUSHBUTTON      "确定",LWS_yes,4,289,49,20
+    PUSHBUTTON      "关于",LWS_about,158,289,50,19
+    CTEXT           "Lock Windows Screen\nv1.0",IDC_STATIC,56,293,97,16
+    CONTROL         "请输入要开始锁屏的时间：",IDC_RADIO4,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,12,158,132,16
+    CONTROL         "请输入多少时间后锁屏结束：",IDC_RADIO5,"Button",
+                    BS_AUTORADIOBUTTON,12,203,115,16
+    EDITTEXT        IDC_EDIT5,15,224,29,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT6,73,224,29,15,ES_AUTOHSCROLL
+    CTEXT           "分",IDC_STATIC,47,224,25,14,SS_CENTERIMAGE | NOT 
+                    WS_GROUP
+    LTEXT           "秒钟后结束锁屏",IDC_STATIC,109,224,81,14,SS_CENTERIMAGE | 
+                    NOT WS_GROUP
+END
+
+IDD_DIALOG1 DIALOG DISCARDABLE  0, 0, 136, 90
+STYLE DS_MODALFRAME | WS_POPUP
+FONT 10, "System"
+BEGIN
+    CTEXT           "作者帅吗？",IDC_STATIC,4,3,48,14,SS_CENTERIMAGE
+    CONTROL         "帅!   My Love!",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,
+                    5,17,63,16
+    CONTROL         "酷!  My Sweet!",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,
+                    74,17,62,16
+    CTEXT           "输入密码：",IDC_STATIC,2,35,40,15,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT4,46,36,88,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "langker大大，我要解锁！",IDC_BUTTON1,4,69,130,17
+    CTEXT           "langker个人业余作品",IDC_STATIC,2,50,132,16,
+                    SS_CENTERIMAGE
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "LWS Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "LWS\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2009\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "LWS.EXE\0"
+            VALUE "ProductName", "LWS 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 119
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 123
+    END
+
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        HORZGUIDE, 50
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 LWS(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\LWS.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

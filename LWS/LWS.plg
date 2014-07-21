@@ -1,0 +1,42 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: LWS - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Debug/LWS.res" /d "_DEBUG" /d "_AFXDLL" "D:\程序设计\LWS\LWS.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPD.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fp"Debug/LWS.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\程序设计\LWS\LWS.cpp"
+"D:\程序设计\LWS\LWSDlg.cpp"
+"D:\程序设计\LWS\SecertDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPD.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPE.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fp"Debug/LWS.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\程序设计\LWS\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPE.tmp" 
+Creating command line "link.exe /nologo /subsystem:windows /incremental:yes /pdb:"Debug/LWS.pdb" /debug /machine:I386 /out:"Debug/LWS.exe" /pdbtype:sept  ".\Debug\LWS.obj" ".\Debug\LWSDlg.obj" ".\Debug\SecertDlg.obj" ".\Debug\StdAfx.obj" ".\Debug\LWS.res" "
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+LWS.cpp
+LWSDlg.cpp
+SecertDlg.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+LWS.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
